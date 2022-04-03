@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url("../Matrix-1.1s-1084px.svg");
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #303434;
+}
+
+.wrapper {
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: relative;
+    margin: 50px auto;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 40%;
+    /* height: 80%; */
+    /* padding: 20px; */
+}
+
+.banner {
+    background-color: #eeedef;
+    height: 25%;
+    text-align: center;
+}
+
+.banner-titel {
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+.banner p {
+    padding: 15px;
+    letter-spacing: 1px;
+}
+
+.banner input {
+    width: 60%;
+    border: 0.1px;
+    border-radius: 3px;
+    height: 40px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.banner input:focus,
+.add-book input:focus {
+    outline: none;
+}
+
+.banner input::placeholder .add-book input::placeholder {
+    font-size: 18px;
+    columns: #eeedef;
+    /* padding: 40% 0 0 10px; */
+    line-height: 30px;
+}
+
+.book-list {
+    /* padding: 20px 0; */
+    background-color: #fff;
+}
+
+.book-list>h2 {
+    font-size: 25px;
+    padding: 20px;
+}
+
+.book-list ul {
+    padding: 0 0 0 25px;
+}
+
+.book-list ul li {
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #deddde;
+    transition: border-left 0.5s;
+}
+
+.book-list ul li:hover {
+    border-left-color: #a274d4;
+}
+
+.book-list ul li span,
+.add-book span {
+    padding: 7px 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #a274d4;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.book-list ul li span:hover {
+    background-color: #303434;
+}
+
+.clear {
+    background-color: #fff;
+    text-align: center;
+    height: 40px;
+}
+
+.no-book {
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    color: rgb(185, 180, 180);
+    position: absolute;
+}
+
+.clear button {
+    display: inline;
+    padding: 5px 20px;
+    border: 1px solid #a274d4;
+    background-color: #a274d4;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.add-book {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeedef;
+}
+
+.add-book input {
+    margin: 30px 0;
+    height: 27px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width: 50%;
+}
+
+.add-book span {
+    /* border: 1px solid #a274d4; */
+    border-radius: 0 5px 5px 0;
+    height: 30px;
+    width: 10%;
+    text-align: center;
+}
+
+#tabbed-content {
+    display: block;
+    height: 30vh;
+    text-align: center;
+    /* margin: 30px 0; */
+}
+
+#tabbed-content ul {
+    margin: 3em 0;
+}
+
+#tabbed-content li {
+    display: inline-block;
+    padding: 10px 14px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#tabbed-content .panel {
+    display: none;
+    /* border: 1px solid #ddd; */
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+#tabbed-content .panel.active {
+    display: block;
+}
